@@ -1,0 +1,45 @@
+ALGORITHM Sentence
+VAR
+    sum:= INTEGER;
+    sentence:= STRING;
+BEGIN
+    write("donner moi une phrase")
+    read(sentence)
+    sum:= sentence.length
+    write("la longueur de la phrase",sum)
+
+END
+ALGORITHM nombre_mot
+VAR
+   sum:=INTEGER;
+    nbr:= INTEGER;
+BEGIN
+   write("donner moi une phrase")
+   read(sentence)
+   for(i=0; i<sentence.length; i++)
+   {
+ if (sentence[i]=" ")
+ { sum:= sum+1 ;
+
+ } 
+   }
+   write(sum)
+END
+ALGORITHM sentence
+VAR
+    sum:=INTEGER
+
+
+BEGIN
+for(i=0; i<sentence.length; i++){
+    if(sentence[i]="a"ou sentence[i]="o"ou sentence[i]="e"ou sentence [i]="i"ou sentence[i]="u")
+    {
+      sum:=sum+1 ;
+
+
+    }
+}
+    write(sum)
+
+
+END
